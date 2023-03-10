@@ -116,7 +116,7 @@ A $2$--mod--cycle is said to be an even cycle. And a
 non--$2$--mod--cycle is a said to be an odd cycle. 
 \end{defn}
 
-\begin{prop}
+\begin{prop}\label{edge-connected-cycles}
 If $G$ and $H$ are two odd cycles connected by at least two
 edges (let this graph be $F$), then $F$ contains an even cycle. 
 \end{prop}
@@ -147,6 +147,40 @@ edges (let this graph be $F$), then $F$ contains an even cycle.
 If $G$ and $H$ are two odd cycles and they share at least $2$ and at most \\ $\max\{V(G), V(H)\} - 1$ vertices (let
 this graph be $F$), then $F$ contains an even cycle. 
 \end{prop}
+
+\begin{prop}
+If $G$ and $H$ are two odd cycles connected by at least two
+paths of length greater than 1 (let this graph be $F$), then $F$
+contains an even cycle. 
+\end{prop}
+
+TODO: The above proof should be almost as the proof for
+proposition simple to prove as the proof for proposition
+\ref{edge-connected-cycles}. The basic idea is as follows look
+at the graph $F$ if it has two paths of the same parity
+connecting $G$ and $H$ this is reduced to the case for
+proposition \ref{edge-connected-cycles} since adding two lengths
+of same parity and another two lengths of same parity will
+result in a final length of even parity. The only difficulty is
+considering the case when one cannot pick two paths which have
+identical parity. In that case one is forced to traverse the
+segment of one of the cycles which has opposite parity to the
+segment walk on the other. Hence giving us two length which are
+of same parity and another two lengths which are of same parity.
+Hence, the total is also guaranteed to be even.
+
+So it is true for odd cycles which are connected by at least two
+paths. What about shared vertices. This is a more complicated
+endeavour. Additionally, it will also be more complicated to
+show this for when a mixture of the two types is present. But
+let us suppose for second that we have shown that said
+statements are true. Using this knowledge we can try to show
+that our weak conjecture is true.
+
+So suppose that we have a connected minimum degree 3 graph and
+that all cycles is said graph are odd. Now what we want to show
+is that any 
+about our contradiction 
 
 TODO: Add exposition as to why I arrived at this point.
 
