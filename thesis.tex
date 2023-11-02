@@ -7,35 +7,25 @@
 \usepackage{latexsym}
 \usepackage{cancel}
 \usepackage{tikz}
+\usepackage{svg}
+\usepackage{layout}
 
 \usepackage{fancyhdr}
 
 \usepackage{float}
 \usepackage{graphicx}
-\usepackage{pagecolor}
 \usepackage{xcolor}
+\usepackage{pagecolor}
 
 \usepackage{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage[default]{lato}
 \usepackage{contour}
 \usepackage{ulem}
 
-
-\usepackage[
-top=2.50cm,
-bottom=2.50cm,
-left=2cm,
-right=2cm,
-marginparsep=0pt,
-marginparwidth=0pt]{geometry}
+\usepackage[a4paper]{geometry}
 
 \parindent 0in
 \parskip 12pt
-
-\definecolor{Ivory Paper}{HTML}{F7F0DF}
-
-\pagecolor{Ivory Paper}
 
 \newcommand{\floor}[1]{\left\lfloor #1 \right\rfloor}
 \newcommand{\ceil}[1]{\left\lceil #1 \right\rceil}
@@ -50,6 +40,8 @@ marginparwidth=0pt]{geometry}
 
 \renewcommand{\ULdepth}{1.8pt}
 \contourlength{0.8pt}
+
+\svgpath{{drawings/}}
 
 \theoremstyle{plain}
 \newtheorem{thm}{Theorem}
@@ -73,8 +65,7 @@ marginparwidth=0pt]{geometry}
 
 \date{\today}
 
-\author {{\textbf{Juan Scerri}}\\
-B.Sc. (Hons)(Melit.) Computing Science and Mathematics (Second Year)}
+\author{\textbf{Juan Scerri}}
 
 \begin{document}
 
@@ -82,7 +73,7 @@ B.Sc. (Hons)(Melit.) Computing Science and Mathematics (Second Year)}
 
 \thispagestyle{empty} % Suppress headers and footers on the title page
 
-\begin{conj}[Erd\H os–Gy\` arf\` as Conjecture]
+\begin{conj}[Erd\H os-Gy\` arf\` as Conjecture]
 
 Every simple graph $G$ with minimum degree $3$ contains a simple
 cycle whose length is a power of two.
@@ -94,6 +85,12 @@ the problem. So instead we will define a weaker version of the
 conjecture. Hopefully, the machinery developed for solving the
 weaker conjecture will prove to be useful when tackling the full
 conjecture.
+
+
+\begin{figure}[H]
+\centering
+\includesvg{graph-shape}
+\end{figure}
 
 \begin{conj}
 
